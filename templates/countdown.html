@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}Countdown{% endblock %}
+{% block content %}
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="center">
+        <h1 class="green">How Many Days Until Christmas {{ year }}?</h1>
+        <h3 class="green">Right now, there are</h3>
+        <h1 style="color: crimson;">{{ day_left }} {% if day_left > 1 %} days {% else %} day {% endif %}</h1>
+        <h3 class="green">until Christmas {{ year }}!</h3>
+    </div>
+</div>
+{% endblock %}
